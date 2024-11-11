@@ -42,7 +42,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""e6b3b17d-6279-4f29-ae6b-9d1591e726cf"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Hold"",
+                    ""interactions"": ""Hold(duration=0.01)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
