@@ -14,13 +14,15 @@ public class PlayerController : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 objectVelocity;
 
+   
     void Awake()
     {
         playerInput = new PlayerInput();
         mainCamera = Camera.main;
     }
 
-     void Update()
+
+    void Update()
     {
         if (isDragging && selectedObject != null)
         {
@@ -35,16 +37,26 @@ public class PlayerController : MonoBehaviour
         RaycastOnMouseMove();
     }
 
+    /// <summary>
+    /// Enables player input actions.
+    /// </summary>
     private void OnEnable()
     {
         playerInput.Enable();
     }
 
+    /// <summary>
+    /// Disables player input actions.
+    /// </summary>
     private void OnDisable()
     {
         playerInput.Disable();
     }
 
+    /// <summary>
+    /// Handles interaction events, allowing the player to grab and release objects.
+    /// </summary>
+    /// <param name="context">Input action callback context.</param>
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -66,6 +78,10 @@ public class PlayerController : MonoBehaviour
     }
 
     #region MouseActionHelperFunction
+
+    /// <summary>
+    /// Moves the selected object in the camera's XY plane based on mouse position.
+    /// </summary>
     private void MoveSelectedObject()
     {
         Vector3 mouseScreenPosition = Input.mousePosition;
@@ -77,6 +93,9 @@ public class PlayerController : MonoBehaviour
         selectedObject.position = newWorldPosition;
     }
 
+    /// <summary>
+    /// Attempts to select an interactable object under the mouse cursor.
+    /// </summary>
     private void TrySelectObject()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -97,6 +116,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Handles raycasting on mouse movement and manages object highlighting.
+    /// </summary>
     private void RaycastOnMouseMove()
     {
         if (isDragging && selectedObject != null && lastSelection == selectedObject)
@@ -122,6 +144,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sets the "_RimTrigger" property on the object's material.
+    /// </summary>
+    /// <param name="renderer">Renderer of the target object.</param>
+    /// <param name="state">Boolean value indicating whether to enable or disable the property.</param>
     private void SetRimTrigger(Renderer renderer, bool state)
     {
         if (renderer != null && renderer.material.HasProperty("_RimTrigger"))
@@ -130,6 +157,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Resets the highlighting on the last selected object.
+    /// </summary>
     private void ResetLastSelection()
     {
         if (isDragging && selectedObject != null && lastSelection == selectedObject)
