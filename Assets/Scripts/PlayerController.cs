@@ -9,11 +9,7 @@ public class PlayerController : MonoBehaviour
     private bool isDragging = false;
     private Vector3 offset;
     private Transform lastSelection;
-
-    private Rigidbody selectedRigidbody;
-    private Vector3 lastPosition;
-    private Vector3 objectVelocity;
-
+    
    
     void Awake()
     {
@@ -27,11 +23,6 @@ public class PlayerController : MonoBehaviour
         if (isDragging && selectedObject != null)
         {
             MoveSelectedObject();
-            if (selectedRigidbody != null)
-            {
-                objectVelocity = (selectedObject.position - lastPosition) / Time.deltaTime;
-                lastPosition = selectedObject.position;
-            }
         }
 
         RaycastOnMouseMove();
@@ -66,14 +57,7 @@ public class PlayerController : MonoBehaviour
         else if (context.canceled)
         {
             isDragging = false;
-
-            if (selectedRigidbody != null)
-            {
-                selectedRigidbody.linearVelocity = objectVelocity;
-            }
-
             selectedObject = null;
-            selectedRigidbody = null;
         }
     }
 
@@ -105,10 +89,6 @@ public class PlayerController : MonoBehaviour
             {
                 selectedObject = hit.transform;
                 isDragging = true;
-
-                selectedRigidbody = selectedObject.GetComponent<Rigidbody>();
-                lastPosition = selectedObject.position;
-
                 Vector3 objectScreenPosition = mainCamera.WorldToScreenPoint(selectedObject.position);
                 Vector3 mouseScreenPosition = Input.mousePosition;
                 offset = mainCamera.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, objectScreenPosition.z)) - selectedObject.position;
