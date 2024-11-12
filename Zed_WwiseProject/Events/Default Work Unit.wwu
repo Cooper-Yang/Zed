@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C704C4C1-07D2-4561-902C-3EF97888DE70}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{C704C4C1-07D2-4561-902C-3EF97888DE70}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C704C4C1-07D2-4561-902C-3EF97888DE70}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Eerie_Night_Ambience" ID="{B109188A-7D89-4841-8FD2-84723E1E4D58}">
+					<ChildrenList>
+						<Action Name="" ID="{823DC301-EAEB-4ED5-890F-A87A0138C79D}" ShortID="912904605">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eerie Night Ambience" ID="{98A01B44-C00A-4005-9DEC-E2683E0BD071}" WorkUnitID="{4E3ED57F-9C07-4DC0-934C-3386CA9B891C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WEATHER_Rain__Small__Designed__Metal_Plate__Asynchronous_Drips__LOOP" ID="{C75ED387-654D-4A63-8DED-789CE7F708CD}">
+					<ChildrenList>
+						<Action Name="" ID="{7C5D66BB-F7F4-4381-BBB7-4EDE96BF550D}" ShortID="303699239">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WEATHER Rain, Small, Designed, Metal Plate, Asynchronous Drips, LOOP" ID="{07304AB3-7D2F-45B6-8054-786126DC16D0}" WorkUnitID="{4E3ED57F-9C07-4DC0-934C-3386CA9B891C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Button" ID="{FCE7055C-426D-4141-806C-5D1470F238AF}">
+					<ChildrenList>
+						<Action Name="" ID="{1A82C5B2-7918-4886-BC77-7CF0C77CA37C}" ShortID="137416450">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button" ID="{41DF08C1-693E-4792-9B2A-DE9FCA5D623B}" WorkUnitID="{4E3ED57F-9C07-4DC0-934C-3386CA9B891C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
