@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2b055f0b212a8242b7ff4f7d6b81e958
     GuidInternal: 
-    m_lastTime: -8584702256522025229
-    List: []
+    m_lastTime: -8584702138207870214
+    List:
+    - name: Main_SoundBank
+      guid: ab5e60ff09f00f4dae376ff6bc35ab3a
+      id: 2228651116
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b055f0b212a8242b7ff4f7d6b81e958
+      - ElementName: Main_SoundBank
+        ObjectType: 7
+        guid: ab5e60ff09f00f4dae376ff6bc35ab3a
+      Path: SoundBanks\Default Work Unit\Main_SoundBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c1c404c7d2076145902c3ef97888de70
     GuidInternal: 
-    m_lastTime: -8584702256521654852
-    List: []
+    m_lastTime: -8584702138279044359
+    List:
+    - name: Play_Button
+      guid: 5c05e7fc6d424141806c5d1470f238af
+      id: 2099555730
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c1c404c7d2076145902c3ef97888de70
+      - ElementName: Play_Button
+        ObjectType: 3
+        guid: 5c05e7fc6d424141806c5d1470f238af
+      Path: Events\Default Work Unit\Play_Button
+      maxAttenuation: 0
+      maxDuration: 0.50002265
+      minDuration: 0.50002265
+    - name: Play_Eerie_Night_Ambience
+      guid: 8a1809b1897d41488fd284723e1e4d58
+      id: 3575453622
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c1c404c7d2076145902c3ef97888de70
+      - ElementName: Play_Eerie_Night_Ambience
+        ObjectType: 3
+        guid: 8a1809b1897d41488fd284723e1e4d58
+      Path: Events\Default Work Unit\Play_Eerie_Night_Ambience
+      maxAttenuation: 0
+      maxDuration: 212.928
+      minDuration: 212.928
+    - name: Play_WEATHER_Rain__Small__Designed__Metal_Plate__Asynchronous_Drips__LOOP
+      guid: 87d35ec74d65634a8ded789ce7f708cd
+      id: 2928907482
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c1c404c7d2076145902c3ef97888de70
+      - ElementName: Play_WEATHER_Rain__Small__Designed__Metal_Plate__Asynchronous_Drips__LOOP
+        ObjectType: 3
+        guid: 87d35ec74d65634a8ded789ce7f708cd
+      Path: Events\Default Work Unit\Play_WEATHER_Rain__Small__Designed__Metal_Plate__Asynchronous_Drips__LOOP
+      maxAttenuation: 0
+      maxDuration: 60
+      minDuration: 60
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +204,7 @@ MonoBehaviour:
     m_lastTime: -8584702256522215419
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f00000013000000140000008b0000008c0000000101000002010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

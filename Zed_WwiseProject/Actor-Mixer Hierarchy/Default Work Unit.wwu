@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4E3ED57F-9C07-4DC0-934C-3386CA9B891C}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{4E3ED57F-9C07-4DC0-934C-3386CA9B891C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4E3ED57F-9C07-4DC0-934C-3386CA9B891C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="WEATHER Rain, Small, Designed, Metal Plate, Asynchronous Drips, LOOP" ID="{07304AB3-7D2F-45B6-8054-786126DC16D0}" ShortID="708682730">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC6D9652-E129-4035-8FBA-F8CBB983A7C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4D417428-61AB-43A3-9A5D-F2DE15FD465D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WEATHER Rain, Small, Designed, Metal Plate, Asynchronous Drips, LOOP" ID="{DEF254F0-3378-46F7-81E5-3A3F9AF5E285}">
+							<Language>SFX</Language>
+							<AudioFile>WEATHER Rain, Small, Designed, Metal Plate, Asynchronous Drips, LOOP.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="91922003"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="WEATHER Rain, Small, Designed, Metal Plate, Asynchronous Drips, LOOP" ID="{DEF254F0-3378-46F7-81E5-3A3F9AF5E285}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Eerie Night Ambience" ID="{98A01B44-C00A-4005-9DEC-E2683E0BD071}" ShortID="29625078">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC6D9652-E129-4035-8FBA-F8CBB983A7C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4D417428-61AB-43A3-9A5D-F2DE15FD465D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Eerie Night Ambience" ID="{3D794560-5883-4D79-ADB1-99F424A50875}">
+							<Language>SFX</Language>
+							<AudioFile>Eerie Night Ambience.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="598038423"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Eerie Night Ambience" ID="{3D794560-5883-4D79-ADB1-99F424A50875}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Button" ID="{41DF08C1-693E-4792-9B2A-DE9FCA5D623B}" ShortID="1046771494">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC6D9652-E129-4035-8FBA-F8CBB983A7C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4D417428-61AB-43A3-9A5D-F2DE15FD465D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Button" ID="{4EBDC9E1-0059-46CE-938F-D6F459F1643D}">
+							<Language>SFX</Language>
+							<AudioFile>Button.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="291730060"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Button" ID="{4EBDC9E1-0059-46CE-938F-D6F459F1643D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

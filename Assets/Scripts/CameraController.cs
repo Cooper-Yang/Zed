@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
     public AnimationCurve transitionCurve; // Curve to control the transition speed
     public float transitionDuration = 1.0f; // Duration of the transition
     public float distanceFromCenter = 5.0f; // Radius distance from the table center
+    public AK.Wwise.Event rotateSound; // Sound to play when rotating the camera
     public Vector3 tableCenter; // Center point of the table
     public float angleIncrement = 45f; // Angle to rotate each time (e.g., 45 degrees)
 
@@ -24,6 +25,7 @@ public class CameraController : MonoBehaviour
         if (!isTransitioning)
         {
             RotateCamera(-angleIncrement);
+            PlayRotateSound();
         }
     }
 
@@ -33,6 +35,7 @@ public class CameraController : MonoBehaviour
         if (!isTransitioning)
         {
             RotateCamera(angleIncrement);
+            PlayRotateSound();
         }
     }
 
@@ -78,5 +81,10 @@ public class CameraController : MonoBehaviour
 
         transform.position = newPosition;
         transform.LookAt(tableCenter); // Always look at the center of the table
+    }
+
+    public void PlayRotateSound()
+    {
+        rotateSound.Post(gameObject);
     }
 }

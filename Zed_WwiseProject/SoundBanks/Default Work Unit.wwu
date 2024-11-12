@@ -4,7 +4,11 @@
 		<WorkUnit Name="Default Work Unit" ID="{0B5F052B-2A21-4282-B7FF-4F7D6B81E958}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main_SoundBank" ID="{FF605EAB-F009-4D0F-AE37-6FF6BC35AB3A}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Button" ID="{FCE7055C-426D-4141-806C-5D1470F238AF}" WorkUnitID="{C704C4C1-07D2-4561-902C-3EF97888DE70}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Eerie_Night_Ambience" ID="{B109188A-7D89-4841-8FD2-84723E1E4D58}" WorkUnitID="{C704C4C1-07D2-4561-902C-3EF97888DE70}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WEATHER_Rain__Small__Designed__Metal_Plate__Asynchronous_Drips__LOOP" ID="{C75ED387-654D-4A63-8DED-789CE7F708CD}" WorkUnitID="{C704C4C1-07D2-4561-902C-3EF97888DE70}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
