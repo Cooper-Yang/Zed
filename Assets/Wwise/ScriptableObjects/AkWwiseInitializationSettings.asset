@@ -20,11 +20,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c319a03ca2e176d438cfe661403a507c, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
-    m_BasePath: Audio\GeneratedSoundBanks
+    m_BasePath: Audio/GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
     m_IsDecodedBankEnabled: 0
-    m_IsAutoBankEnabled: 1
+    m_IsAutoBankEnabled: 0
     m_DefaultScalingFactor: 1
     m_MaximumNumberOfPositioningPaths: 255
     m_CommandQueueSize: 262144
