@@ -41,3 +41,13 @@ sysinfo.txt
 # Crashlytics generated files
 crashlytics-build.properties
 fabric.properties
+
+# Wwise Generated SoundBanks and Cache
+**/GeneratedSoundBanks/
+**/Wwise/Cache/
+
+# Wwise specific cache and temporary files
+Wwise_IDs.h
+*.wwu.bak
+*.log
+*.tmp
